@@ -1,0 +1,23 @@
+<resources>
+    <string name="greeting">Welcome to My Pet Bob!</string>
+    <string name="Button1">Play Now</string>
+    <string name="toys">toys dog</string>
+    <string name="house">housing</string>
+    <string name="pet">main dog</string>
+    <string name="sun">sun</string>
+    <string name="feed">Feed</string>
+    <string name="clean">Clean</string>
+    <string name="plays">Play</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="app_name">Tamagotchi</string>
+    <string name="doggy">Doggy</string>
+    <string name="Clean3">Clean</string>
+    <string name="Hunger1">Hunger</string>
+    <string name="Happy2">Happiness</string>
+    <string name="Sunny">Sunny</string>
+    <string name="lorem_ipsum">...</string>
+    <string name="first_fragment_label">...</string>
+    <string name="second_fragment_label">...</string>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paws"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="251dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="monospace"
+        android:text="@string/greeting"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/pet"
+        android:layout_width="171dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="47dp"
+        android:contentDescription="@string/pet"
+        android:rotationY="-174"
+        app:layout_constraintBottom_toTopOf="@+id/Button1"
+        app:layout_constraintEnd_toStartOf="@+id/house"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hello"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="182dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="155dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="monospace"
+        android:text="@string/Button1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet" />
+
+    <ImageView
+        android:id="@+id/house"
+        android:layout_width="136dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="316dp"
+        android:contentDescription="@string/house"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pet"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/house" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="105dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="251dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/sun"
+        android:rotation="21"
+        android:rotationY="-8"
+        app:layout_constraintBottom_toTopOf="@+id/house"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
+        app:srcCompat="@drawable/sunny" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

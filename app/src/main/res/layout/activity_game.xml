@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boarder">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="197dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="110dp"
+        android:contentDescription="@string/doggy"
+        app:layout_constraintBottom_toTopOf="@+id/plays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hello"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#92FF5722"
+        android:text="@string/feed"
+        android:textColor="#3E2723"
+        app:layout_constraintBottom_toTopOf="@+id/Hunger1"
+        app:layout_constraintEnd_toStartOf="@+id/plays"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/plays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/plays"
+        app:layout_constraintBottom_toTopOf="@+id/hungerBar"
+        app:layout_constraintEnd_toStartOf="@+id/clean"
+        app:layout_constraintStart_toEndOf="@+id/feed"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#E91E63"
+        android:text="@string/clean"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/hungerBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plays"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/Hunger1"
+        android:layout_width="79dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Hunger1"
+        app:layout_constraintBottom_toTopOf="@+id/Happy2"
+        app:layout_constraintEnd_toStartOf="@+id/hungerBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feed"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/Happy2"
+        android:layout_width="83dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="69dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Happy2"
+        app:layout_constraintBottom_toTopOf="@+id/Clean3"
+        app:layout_constraintEnd_toStartOf="@+id/happyBar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/Clean3"
+        android:layout_width="58dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Clean3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cleanBar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <ProgressBar
+        android:id="@+id/hungerBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="144dp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="60dp"
+        android:indeterminateDrawable="@color/yellow"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/happyBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Hunger1"
+        app:layout_constraintTop_toBottomOf="@+id/plays" />
+
+    <ProgressBar
+        android:id="@+id/happyBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="151dp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="69dp"
+        android:indeterminateDrawable="@color/yellow"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/cleanBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Happy2"
+        app:layout_constraintTop_toBottomOf="@+id/hungerBar" />
+
+    <ProgressBar
+        android:id="@+id/cleanBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="155dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="65dp"
+        android:indeterminateDrawable="@color/yellow"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Clean3"
+        app:layout_constraintTop_toBottomOf="@+id/happyBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
